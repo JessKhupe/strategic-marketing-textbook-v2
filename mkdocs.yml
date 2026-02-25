@@ -1,188 +1,29 @@
-site_name: Building Intelligent Textbooks With AI
-site_description: 'Designing and building intelligent textbooks use open source tools.  Examples with mkdocs build system with the material theme.'
-site_author: 'Dan McCreary'
+site_name: Strategic Marketing in the AI Age
+site_description: 'A strategic marketing textbook for the AI age that blends marketing principles with machine intelligence.'
+site_author: 'Jessica Khupe'
 repo_name: 'GitHub Repo'
-site_url: 'https://dmccreary.github.io/intelligent-textbooks/'
-repo_url: 'https://github.com/dmccreary/intelligent-textbooks'
+site_url: 'https://jessicakhupe.github.io/strategic-marketing-in-the-ai-age/'
+repo_url: 'https://github.com/jessicakhupe/strategic-marketing-in-the-ai-age'
 edit_uri: 'blob/master/docs'
 
 nav:
-  - Home: index.md
-  - About ths Site: about.md
-  - Course Description: course-description.md
-  - Table of Contents: book-table-of-contents.md
-  - Mission and Values: mission-and-values.md
-  
-  - Tutorial:
-    - Introduction: tutorial/index.md
-    - Getting Started: tutorial/getting-started.md
-    - Directory Structure: tutorial/directory-structure.md
-    - Markdown: tutorial/markdown.md
-    - Navigation: tutorial/navigation.md
-    - Admonitions: tutorial/admonitions.md
-    - Prompt Copy Admonition: tutorial/admonition-prompt-copy.md
-    - Quizzes: tutorial/quizzes.md
-    - Upper Alpha Lists: tutorial/upper-alpha-lists.md
-    - Adding a MicroSim: tutorial/adding-a-microsim.md
-    - Testing: tutorial/testing.md
-    - Feedback: tutorial/feedback.md
-    - Logging: tutorial/logging.md
-    - Social: tutorial/social.md
-    - Open Graph: tutorial/open-graph.md
-    - Google Analytics: tutorial/google-analytics.md
-    - Logo and Favicon: tutorial/logo-and-favicon.md
-    - CSS: tutorial/css-tips.md
-    - Disable Titles: tutorial/disable-title.md
-    - Hiding Content: tutorial/hiding-content.md
+  - "Home": index.md
+  - "Chapter 1: Marketing Fundamentals Meet Machine Intelligence": chapter-01-marketing-fundamentals-meet-machine-intelligence.md
+  - "Chapter 2: AI & Machine Learning Foundations for Marketers": chapter-02-ai-machine-learning-foundations-for-marketers.md
+  - "Chapter 3: Data Infrastructure: The Foundation of AI Marketing": chapter-03-data-infrastructure-foundation.md
+  - "Chapter 4: Personalization Engines: From Segments to Individuals": chapter-04-personalization-engines.md
+  - "Chapter 5: Content Generation & Brand Voice at Scale": chapter-05-content-generation-brand-voice.md
+  - "Chapter 6: Customer Analytics: From Hindsight to Foresight": chapter-06-customer-analytics.md
+  - "Chapter 7: Attribution & Performance Measurement": chapter-07-attribution-performance.md
+  - "Chapter 8: Marketing Automation: From Workflows to Intelligent Systems": chapter-08-marketing-automation.md
+  - "Chapter 9: Ethical AI Marketing & Responsible Automation": chapter-09-ethical-ai-marketing.md
+  - "Chapter 10: Accessibility & Inclusive Marketing": chapter-10-accessibility-inclusive.md
+  - "Chapter 11: Channel Strategy & Omnichannel Orchestration": chapter-11-channel-strategy.md
+  - "Chapter 12: Conversion Optimization & Growth Experimentation": chapter-12-conversion-optimization.md
+  - "Chapter 13: Customer Retention & Loyalty Systems": chapter-13-customer-retention.md
+  - "Chapter 14: Autonomous Growth Systems & Product-Led Growth": chapter-14-autonomous-growth-systems.md
+  - "Chapter 15: Strategic AI Marketing Leadership & Transformation": chapter-15-strategic-ai-marketing-leadership.md
 
-
-  - Educational Concepts:
-    - Introduction: concepts/index.md
-    - Five Levels of Intelligent Textbooks: concepts/five-levels-of-intelligent-textbooks.md
-    - Bloom's Taxonomy: concepts/bloom-taxonomy.md
-    - Scaffolding: concepts/scaffolding.md
-    - From Seed to Tree: concepts/from-seed-to-tree.md
-    - Learning Graph: concepts/learning-graph.md
-    - Adaptive Assessments: concepts/adaptive-assessments.md
-    - Best Practices: concepts/best-practices.md
-    - Learning Theory: concepts/learning-theory.md
-    - Levels of Interactivity: concepts/levels-of-interactivity.md
-    - Ontology Questions: concepts/ontology-questions.md
-    - Open Educational Resources: concepts/open-educational-resources.md
-    - Instructional Design: concepts/instructional-design.md
-    - Levels of Interactivity: concepts/levels-of-interactivity-v1.md
-    - From Sage to Guide: concepts/from-sage-to-guide.md
-    - Pedagogical Agent: concepts/pedagogical-agent.md
-    - Quality Metrics: concepts/quality-metrics.md
-    - Iframe Guidelines: concepts/iframe-guidelines.md
-    - Scroll Hijacking: concepts/scroll-hijacking.md
-    - Book Metadata:
-      - Book Metadata Intro: concepts/book-metadata/index.md
-      - Book Metadata Guide: concepts/book-metadata/book-metadata-guide.md
-      - Book Metadata Summary: concepts/book-metadata/book-metadata-summary.md
-      - Book Metadata Quickstart: concepts/book-metadata/book-metadata-quickstart.md
-  
-  - Stories:
-    - Introduction: stories/index.md
-    - From Moldy Books to PhD: stories/hadi/index.md
-
-  - Workflows:
-    - Introduction: workflow/index.md
-    - Course Description: workflow/course-description.md
-    - Bloom's Taxonomy: workflow/bloom-taxonomy.md
-    - Concept Enumeration: workflow/concept-enumeration.md
-    - Concept Dependency: workflow/concept-dependency.md
-    - Concept Taxonomy: workflow/concept-taxonomy.md
-    - Learning Graph: workflow/learning-graph.md
-    - Chapters and Sections: workflow/chapters-and-sections.md
-    - Glossary: workflow/glossary.md
-    - FAQs: workflow/faq.md
-    - Figures, Diagrams and Charts: workflow/figures-diagrams-charts.md
-    - Interactive Infographics: workflow/interactive-infographics.md
-    - MicroSims: workflow/microsim.md
-    - Graphic Novel: workflow/graphic-novel.md
-    - Infographics: workflow/infographics.md
-    - Lists, Tables and Charts: workflow/lists-tables-charts--plots.md
-  
-  - MicroSims:
-    - Introduction: sims/index.md
-    - Addie Workflow: sims/addie-workflow/index.md
-    - AI Flywheel: sims/ai-flywheel/index.md
-    - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
-    - Bloom's Taxonomy: sims/blooms-taxonomy/index.md
-    - Book Generation Workflow: sims/book-gen-workflow/index.md
-    - Book Levels: sims/book-levels/index.md
-    - Cognitive Load: sims/cognitive-load/index.md
-    - High School Courses: sims/high-school-courses/index.md
-    - Implementation Decision Matrix: sims/implementation-matrix/index.md
-    - Kemp Model: sims/kemp-model/index.md
-    - Learning Graph: sims/learning-graph/index.md
-    - Levels of Interactivity: sims/levels-of-interactivity/index.md
-    - METR Task Horizon Growth: sims/metr-task-horizon/index.md
-    - Privacy Threshold Chart: sims/privacy-threshold-chart/index.md
-    - Question Color Update: sims/question-color-update/index.md
-    - SAE vs Textbook Levels: sims/sae-comparison/index.md
-    - Sam Process: sims/sam-process/index.md
-    - Sine Wave: sims/sine-wave/index.md
-    - Standards Ecosystem: sims/standards-ecosystem/index.md
-    - Terms to EKG: sims/terms-to-ekg/index.md
-    - Textbook Ecosystem CLD: sims/textbook-ecosystem-cld/index.md
-    - Three Color DFS: sims/three-color-dfs/index.md
-    - Word Cloud: sims/word-cloud/index.md
-    - Templates: sims/templates/index.md
-  
-  - Case Studies:
-    - Intro: case-studies/index.md
-  
-  - Learning Graph:
-    - Introduction: learning-graph/index.md
-    - Axiom Mascot Test: learning-graph/axiom-mascot-test.md
-    - learning-graph/axiom-mascot-guide.md
-    - learning-graph/axiom-prompts.md
-    - learning-graph/axiom-style-guide.md
-    - learning-graph/book-mascot-linkedin-announcement.md
-    - learning-graph/trim-mascot-padding.md
-  - Prompts:
-    - Introduction: prompts/index.md
-    - Feature Mapping: prompts/feature-mapping.md
-    - Learning Graph:
-      - Introduction: prompts/learning-graph/index.md
-      - Course Description: prompts/learning-graph/00-course-description.md
-      - Personas: prompts/learning-graph/01-personas.md
-      - Enumerate Concepts: prompts/learning-graph/02-enumerate-concepts.md
-      - Dependency Graph: prompts/learning-graph/03-dependency.md
-      - Concept Taxonomy: prompts/learning-graph/04-taxonomy.md
-    - Generating Chapter Content:
-      - Introduction: prompts/chapter-content/index.md
-    - Generate Logo: prompts/generate-logo.md
-    - Generate Cover Image: prompts/generate-cover-image.md
-    - Intelligence Level Questions: prompts/level-questions.md
-    - Semantic Search: prompts/semantic-search.md
-    - Generate README.md: prompts/generate-readme.md
-    - Word Cloud: prompts/word-cloud.md
-    - Quality Metrics: prompts/quality-metrics.md
-    - Discord Admin: prompts/discord-admin.md
-    - Terms to EKG: prompts/terms-to-ekg/index.md
-    - Suggest Skills: prompts/suggest-skills.md
-    - Generate Glosssary Skill: prompts/generate-glossary-skill.md
-    - Generate FAQ Skill: prompts/generate-faq-skill.md
-    - Generate Quiz Skill: prompts/generate-quiz-skill.md
-
-  
-  - Skills:
-    - Introduction: skills/index.md
-    - Learning Graph: skills/learning-graph.md
-    - MicroSims: skills/microsim-p5.md
-    - Chapter Generator: skills/chapter-generator.md
-    - Concept Validator: skills/concept-validator.md
-    - FAQ Generator: skills/faq-generator.md
-    - Glossary Generator: skills/glossary-generator.md
-    - Quality Metrics Analyzer: skills/quality-metrics-analyzer.md
-    - Quiz Generator: skills/quiz-generator.md
-    - Recommended Skill Summary: skills/recommended-skills-summary.md
-    - Social Media Generator: skills/social-media-generator.md
-    - Template: skills/template.md
-  
-  - Formatting Tests:
-    - Introduction: formatting-tests/index.md
-    - Code Highlighting: formatting-tests/code-highlight-test.md
-    - Markdown: formatting-tests/markdown-test.md
-    - Admonitions: formatting-tests/admonitions-test.md
-    - Quizzes: formatting-tests/quizzes-test.md
-    - Equations: formatting-tests/equations-test.md
-    - Social Media Preview: formatting-tests/social-test.md
-    - Social Media Override Preview: formatting-tests/social-test-2.md
-
-  - Feedback: feedback.md
-  - Glossary: glossary.md
-  - License: license.md
-  - FAQ: faq.md
-  - How We Built This Site: how-we-built-this-site.md
-  - URI Scheme: uri-scheme.md
-  - References: references.md
-  - Contact: contact.md
- 
-# Dan's MicroSite Standards from here down
 
 theme:
   name: material
@@ -207,17 +48,6 @@ plugins:
   - search
   - social
   - social_override
-  - glightbox:
-      touchNavigation: true
-      loop: false
-      effect: zoom
-      slide_effect: slide
-      width: 100%
-      height: auto
-      zoomable: true
-      draggable: true
-      auto_caption: false
-      caption_position: bottom
 markdown_extensions:
   - admonition
   - md_in_html # required for multiple-choice question numbering
@@ -238,7 +68,7 @@ extra_javascript:
     - js/extra.js
     # needed for mathjax to work
     - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-copyright: Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+copyright: Copyright &copy; 2026 Jessica Khupe. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
 extra:
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
   generator: false

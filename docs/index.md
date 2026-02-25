@@ -1,9 +1,9 @@
 ---
-title: Building Intelligent Textbooks
-description: A step-by-step guide to building intelligent textbooks using LLMs, graphs and agents.
-image: /img/cover-social-media-preview.png
-og:image: /img/cover-social-media-preview.png
-twitter:image: /img/cover-social-media-preview.png
+title: Strategic Marketing in the AI Age: From Brand Management to Autonomous Growth Engines
+description: An intelligent textbook transforming marketing professionals into architects of AI-powered growth systems.
+image: /img/hero-static.jpg
+og:image: /img/hero-static.jpg
+twitter:image: /img/hero-static.jpg
 social:
    cards: false
 hide:
@@ -12,41 +12,45 @@ hide:
 <style>
 .md-content__inner h1 {display: none !important;}
 </style>
-# Building Intelligent Textbooks With AI
+# Strategic Marketing in the AI Age: From Brand Management to Autonomous Growth Engines
 
-![Cover Image](./img/cover.png){ width="750" }
+## Course Overview
 
-*Intelligent textbooks guide students through concepts
-on their quest for knowledge.*
+This intelligent textbook transforms marketing professionals from tactical executors into strategic architects of AI-powered growth systems. Moving far beyond basic prompt engineering, you'll learn to design autonomous marketing engines that blend brand strategy, ethical automation, and scalable personalization. The course bridges classical marketing frameworks with cutting-edge AI capabilities, teaching you to build systems that learn, adapt, and optimize across customer lifecycles while maintaining brand integrity and ethical standards.
 
-Welcome to the website for a step-by-step guide to building [intelligent textbooks](./glossary.md#intelligent-textbook) using open standards.
+Through interactive MicroSim environments, you'll practice real-world scenarios where AI tools meet strategic decision-making. You'll design customer segmentation systems that evolve with behavior patterns, build content engines that maintain brand voice at scale, and architect attribution models that inform strategic resource allocation. Each module connects marketing theory to executable AI workflows, ensuring you can translate strategy into automated systems that drive measurable growth.
 
-!!! Announcement
-    We now have dozens of Claude Code Skills that automate over
-    90% of the tasks required to build level-2 textbooks from a course
-    description.  See our [Claud Skills](https://dmccreary.github.io/claude-skills/)
-    intelligent textbook for more information.  It rocks!!
+The curriculum emphasizes systems thinking over tool proficiency. You'll learn to identify where AI creates genuine competitive advantage versus where human creativity and strategic judgment remain irreplaceable. By integrating ethical frameworks throughout, you'll develop the critical lens needed to deploy AI responsibly while maximizing marketing effectiveness.
 
-Most of the examples on this website use the [mkdocs](http://mkdocs.com) build system 
-paired with generative AI to create and maintain intelligent textbooks.  We also
-leverage the [material theme](./glossary.md#material) to create customized look-and-feel
-systems for textbooks.
+## Target Audience
 
-We feel that many courses today can benefit for high-quality online textbooks that have some of the following features:
+MBA students, brand managers, and marketing strategists transitioning into AI-enabled business environments.
 
-1. Powerful and easy to use [Search](./glossary.md#search)
-2. Site [Navigation](./glossary.md/#navigation)
-3. [MicroSims](./glossary.md#microsim) - adding interactive simulations to any page using p5.js or iframes
-4. [Glossary of Terms](./glossary.md#glossary-of-terms)
-5. Table of Contents - generate a [table of contents](./book-table-of-contents.md) for the entire book
-6. [Link Checker](./glossary.md#link-checker) - check for broken links on the website
-7. [Social Media Previews](./glossary.md#social-media-previews) and local override
-8. Rendering [Formulas](./glossary.md#formulas) - allow pages to include complex equations and mathematical formulas
-9. [Code Highlighting](./glossary.md#code-highlighting) - make code easy to view with color syntax highlighting
-10. [License Management](./glossary.md#license) with a link to the license in the footer of each page
-11. [Site Analytics with Google Analytics](./glossary.md#website-analytics)
-12. [Edit from GitHub](./glossary.md#edit-from-github)
-13. [Automatic Build](./glossary.md#automatic-build)
-14. [Quiz Management](./glossary.md#quiz-management)
-15. High quality website logo and [favicon](./glossary.md#favicon) generate for multiple environments [Logo and Favicon](./tutorial/logo-and-favicon.md)
-16. An easy-to-visualize [Concept Graph](./glossary.md#concept-graph) that shows all the concepts in the class and their dependencies.
+## Learning Objectives (Bloom's Taxonomy Mapped)
+
+**Remember & Understand:** (1) Define AI/ML concepts relevant to marketing, (2) Identify ethical risks in AI marketing automation
+
+**Apply & Analyze:** (3) Build customer segmentation using behavioral data, (4) Design content systems maintaining brand voice at scale, (5) Analyze attribution models across multi-touch customer journeys
+
+**Evaluate & Create:** (6) Evaluate AI investment ROI frameworks, (7) Design autonomous growth systems, (8) Create ethical AI governance frameworks for marketing organizations
+
+## Key Outcomes
+
+- Lead AI marketing transformation at VP/CMO level
+- Design personalization engines at scale
+- Build and govern autonomous growth systems
+- Apply ethical AI frameworks in real marketing contexts
+
+## MicroSim Applications
+
+1. Brand Positioning Simulator
+2. Campaign ROI Optimizer
+3. AI Automation Ethics Crisis
+4. Personalization at Scale Engine
+5. Autonomous Growth Engine Design
+
+## Course Format
+
+Self-paced intelligent textbook with embedded MicroSims, case studies, interactive frameworks, and applied exercises. Estimated completion: 40–60 hours over 8–12 weeks.
+
+<!-- end content -->

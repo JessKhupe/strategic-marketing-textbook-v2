@@ -1,4 +1,4 @@
-# Building Intelligent Textbooks With AI
+# Strategic Marketing in the AI Age
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)](https://dmccreary.github.io/intelligent-textbooks/)
@@ -6,7 +6,7 @@
 [![p5.js](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=white)](https://p5js.org/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-> A comprehensive guide to designing and building online interactive intelligent textbooks using open source tools, with a focus on interactive learning experiences and AI-powered content generation.
+> Strategic marketing principles and tactics powered by artificial intelligence, data, and automation. This resource provides a framework for modern marketers navigating the AI revolution.
 
 ## 🌐 Website
 
