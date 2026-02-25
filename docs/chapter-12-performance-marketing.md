@@ -1,6 +1,6 @@
 ---
 title: Chapter 12: Performance Marketing & Measurement
-description: Data-driven paid media, measurement strategies, and experimentation.
+description: Paid media strategy, incrementality testing, experimentation design, measurement, and automated optimization.
 ---
 
 # Chapter 12: Performance Marketing & Measurement

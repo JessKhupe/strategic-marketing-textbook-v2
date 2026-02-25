@@ -1,6 +1,6 @@
 ---
 title: Chapter 15: Ethics, Governance & Responsible Marketing
-description: Principles and governance for ethical AI use in marketing.
+description: AI governance frameworks, bias audits, model cards, responsible AI policies, and organizational accountability structures.
 ---
 
 # Chapter 15: Ethics, Governance & Responsible Marketing

@@ -1,6 +1,6 @@
 ---
 title: Chapter 14: Growth, Retention & Lifecycle Marketing
-description: Strategies to acquire, retain, and grow customer value over time.
+description: Activation optimization, retention loops, churn prediction, lifecycle segmentation, and value-based growth strategies.
 ---
 
 # Chapter 14: Growth, Retention & Lifecycle Marketing

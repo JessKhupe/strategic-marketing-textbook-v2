@@ -1,6 +1,6 @@
 ---
 title: Chapter 13: Creative Systems & Generative Content
-description: Building scalable creative systems with generative AI.
+description: Generative text/image/audio systems, prompt engineering, variant testing, human review, and brand safety at scale.
 ---
 
 # Chapter 13: Creative Systems & Generative Content
