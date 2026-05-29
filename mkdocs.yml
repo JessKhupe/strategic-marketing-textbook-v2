@@ -8,6 +8,11 @@ edit_uri: 'blob/master/docs'
 
 nav:
   - "Home": index.md
+  - "MicroSims":
+    - "Overview": "microsims/index.md"
+    - "Brand Positioning": "microsims/brand-positioning-simulator.html"
+  - "Code Modules":
+    - "Overview": "code/README.md"
   - "Chapter 1: Marketing Fundamentals Meet Machine Intelligence": chapter-01-marketing-fundamentals-meet-machine-intelligence.md
   - "Chapter 2: AI & Machine Learning Foundations for Marketers": chapter-02-ai-machine-learning-foundations-for-marketers.md
   - "Chapter 3: Data Infrastructure: The Foundation of AI Marketing": chapter-03-data-infrastructure-foundation.md

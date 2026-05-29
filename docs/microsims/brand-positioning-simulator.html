@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroSim: Brand Positioning Simulator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg-main: #fdfcf9; --bg-card: #ffffff; --text-primary: #1a1a1a; --text-secondary: #666666; --accent-green: #2d7a4f; --accent-red: #c1444a; --accent-blue: #4a7ba7; --border: #e5e5e5; --shadow: rgba(0, 0, 0, 0.08); }
+        body { font-family: 'Work Sans', sans-serif; background: var(--bg-main); color: var(--text-primary); line-height: 1.6; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 5        .header { text-align: center; margin-bottom: 5ottom: 30px; }
+        .header h1 { font-family: 'Crimson Pro', serif; font-size: 3em; font-weight: 700; color: var(--accent-green); margin-bottom: 10px; letter-spacing: -0.02em; }
+        .header .subtitle { font-size: 1.1em; color: var(--text-secondary); font-weight: 400; }
+        .metrics-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; padding: 25px; background: var(        .metrics-bar { display: grid; grid-template-columns--        .metrics-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; padding: 25px; background: var(        .metrics-bar { display: grid; grid-template-columns--        .metrics-ba font-family: 'Crimson Pro', serif; font-size: 2em; font-weight: 700; color: var(--accent-green); }
+        .scenario-card { background: var(--bg-card); border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 4px 12px var(--shadow); border-left: 4px solid var(--accent-green); }
+        .scenario-title { font-family: 'Crimson        .scenario-title { font-family: 'Crimson        .scenario-title { font-family: 'Crimson        .scenario-title { font-family: 'Crimson        .scenario-titleolor: var(--text-primary); margin-bottom: 20px; }
+        .decision-section { background: var(--bg-card); border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 4px 12px var(--shadow); }
+        .decision-title { font-family: 'Crimson Pro', serif; font-size: 1.5em; font-weight: 700; margin-bottom: 25px; color: var(--text-primary); }
+        .options { display: grid; gap: 15px; }
+        .option-btn { background: var(--bg-main); border: 2px solid var(--border); border-radius: 8px; padding: 20px 25px; text-align: left; cursor: pointer; transition: all 0.3s ease; font-family: 'Work Sans', sans-serif        .option-btn { background: var(--bg-main); border: 2px solid var(--border); border-radius: 8px; padding: 20px 25px; text-align: left; cursor: pointer; transition: all 0.3s ease; font-fa color: var(--text-primary); margin-bottom: 8px; }
+        .option-desc { font-size: 0.9em; color: var(--text-secondary); }
+        .outcome-card { background: linear-gradient(135deg, #2d7a4f 0%, #1a5738 100%); color: white; border-radius: 12px; padding: 40px; margin-top: 40px; box-shadow: 0 8px 24px rgba(45, 122, 79, 0.3); }
+        .outcome-card.negative { background: linear-gradient(135deg, #c1444a 0%, #8b3238        .outcome-card.negative { background: linear-gradient(135deg, #c1444a 0%, #8b3238        .outcome-card.negative { background: linear-gradie700; margin-bottom: 20px; }
+        .outcome-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 30px 0; padding: 25px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; }
+        .outcome-metric { text-align: center; }
+        .outcome-metric-label { font-size: 0.85em; opacity: 0.9; margin-bottom: 8px; }
+        .outcome-metric-value { font-size: 1.8em; font-weight: 700; }
+        .outcome-text { font-size: 1.05em; line-height: 1.8; margin-bottom: 15px; }
+        .restart-btn { background: white; color: var(--accent-green); border: none; border-radius: 8px; padding: 15px 40px; font-size: 1em; font-weight: 600; cursor: pointer; margin-top: 20px; transition: all 0.3s ease; }
+        .restart-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); }
+        .progress-bar { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 40px; overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--accent-green); transition: width 0.5s ease; }
+        .hidden { display: none; }
+        .context-box { background: #fff9e6; border-left: 4px solid #f4c430; padding: 20px; margin: 20px 0; border-radius: 4px; }
+        .context-box-title { font-weight: 600; margin-bottom: 10px        .context-box-title { font-weight: 600; margin-bottom: 10px        .context-bos="header">
+        <h1>Brand Positioning Simulator</h1>
+        <div class="subtitle">FreshPlate: Strategic Positioning Challenge</div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progressBar"></div></div>
+    <div class="metrics-bar" id="metricsBar">
+        <div class="metric">
+            <div class="metric-label">Revenue (Yr 1)</div>
+                                                                                                              
+            <div class="metric-label">Brand Health</div>
+            <div class="metric-value" id="brandMetric">-/10</div>
+                                                                                                                                           id="ethicsMetric">-/10</div>
+        </div>
+    </div>
+    <div id="content"></div>
+</div>
+
+<script>
+const state = {step:0, decisions:[], revenue:0, brandHealth:5, ethicsScore:7, totalSteps:5};
+
+const scenarios = [
+{title:"The Scenario", text:`<p>You're the CMO of <strong>FreshPlate</strong>, {title:"The Scenario", text:`<p>You're the ie{title:"The Scenario", text:`<p>You're the CMO of <strong>FreshPlate</strong>,ro{title:"T0M ARR in 12 months.</p>`},
+{title:"Decision 1: Core Positioning", question:"How should FreshPlate position itself?", options:[
+{title:"Health-Tech Platform", desc:{title:"Health-Tech Platform", desc:{title:"Health-Tech Pr {title:"Health-Tech Platform", desc:{title:"Health-Tech Platform", desc:{title:"Health-Tech Pr {title:"Healthh {title:"Health-Tech Platform", desc:{title:"Health-Techve{title:"Health-Tech Platform", desc:{title:"Health-Tech Platformne{title:"Health-Tech Platform", desc:{title:"Health-Tech Platform", desc:{title:"Health-Tech Pr {title:"Health-Tech Platform", desc:{title:"Health-Tech Platform", desces food waste.", {title:"Hev{title:"Health-Tech Platfor}}
+]},
+{title:"Decision 2: AI Transparency Crisis", question:"Allergic reaction traced to AI error. How transparent should you be?", options:[
+{title:"Full Transparency", desc:"Explain exactly how AI failed. Offer manual meal selection mode.", impact:{revenue:-0.3, brand:2, ethics:3}},
+{title:"Balanced Response", desc:"Acknowledge incident, explain improvements. Don't spo{title:"Balanced Response", desc:"Acknowledge incident, explain improvements. Don't spo{title:"Bal customer responsibility. Protect AI positioning.", impact:{revenue:0, brand:-2, ethics:-3}},
+{title:"Invisible AI Mode", desc:"Stop mentioning AI. Use 'smart personalization' instead.", impact:{revenue:0.2, brand:-1, ethics:-2}}
+]},
+{title:"Decision 3: Data Monetization", question:"Pharma company offers $2M/year for health data. Your CFO says this extends runway 18 months.", options:[
+{title:"Accept with Full Disclosure", desc:"Take deal but notify users, offer opt-out, update ToS clearly.", impact:{revenue:1.8, brand:1, ethics:2}},
+{title:"Accept Quietly", desc:"Sign deal. Current ToS allows it. Disclose in annual report only.", impact:{revenue:2.0, brand:-3, ethics:-4}},
+{title:"Decline", desc:"Turn down offer. Commit to never monetizing user data.", impact:{revenue:-0.5, brand:3, ethics:4}},
+{title:"User Participation", desc:"Negotiate opt-in where users get paid ($50/year credit).", impact:{revenue:0.8, brand:2, ethics:3}}
+]},
+{title:"Decision 4: Marketing Budget", question:"$5M budget. How do you allocate?", options:[
+{title:"Performance-Heavy (70% paid)", desc:"Paid search + Facebook. Fast growth, data-driven.", impact:{revenue:1.5, brand:-1, ethics:0}},
+{title:"Brand-Building (60% content)", desc:"Content, SEO, partnerships. Slowe{title:"Brand-Building (60% content)", desc:"Content, SEO, partnerships. Slowe{title:"Brand-Building (60% content)", desc:"Content, SEO, partnerships. Sl impact:{revenue:0.8, brand:2, ethics:1}},
+{title:"Balanced Portfolio", desc:"Diversified across channels. Safe but uninspiring.", impact:{revenue:1.0, brand:1, ethics:0}}
+]},
+{title:"Decision 5: AI Failure Response", question:"AI sent shellfish recipes to 847 shellfish-allergic users for 3 week{title:"Decision 5: AI Failure Response", question:"AI sent shellfish recipes to 847 shellfish-allergic users for 3 wed + 1 month free.", impact:{revenue:-0.4, brand:2, ethics:4}},
+{title:"Quiet Fix", desc:"Fix bug. Don't proactively notify. Monitor support."{timpact:{revenue:0, brand:-3, ethics:-4}},
+{title:"Targeted Outreach", desc:"Call (not email) all 847 users personally.", impact:{revenue:-0.2, brand:1, ethics:2}},
+{title:"Soft Disclosure", desc:"Email framed as 'proactive safety update' without admitting error.", impact:{revenue:-0.1, brand:-1, ethics:-2}}
+]}
+];
+
+function updateMetrics(){
+document.getElementById('revenueMetric').textContent=`$${state.revenue.toFixed(1)}M`;
+document.getElementById('brandMetric').textContent=`${state.brandHealth}/10`;
+document.getElementById('ethicsMetric').textContent=`${state.ethicsScore}/10`;
+document.getElementById('progressBar').style.width=`${(state.step/state.totalSteps)*100}%`;
+}
+
+function render(){
+const s=scenarios[state.step];
+const c=document.getElementById('content');
+if(state.step===0){
+c.innerHTML=`<div class="scenario-card"><div class="scenario-title">${s.title}</div><div class="scenario-text">${s.text}</div><button class="option-btn" onclick="next()" style="width:100%;margin-top:20px;"><div class="option-title">Begin Simulation →</div></button></divc.innerHTML=`<div class="scenario-card"><div class="scenario-title">${s.title}</div><div class="scenario-text">${s.text}.title}</div><div class="scenario-text">${s.question}</div><div class="options">${s.options.map((o,i)=>`<button class="option-btn" onclick="decide(${i})">c.innerHTML=`<div class=">${o.title}</div><div class="option-desc">${o.desc}</div></button>`).join('')}</div></div>`;
+}else{showEnd();}
+}
+
+function decide(i){
+const o=scenarios[state.step].options[i];
+state.decisions.push(o);
+state.revenue+=o.impact.revenue;
+state.brandHealth=Math.max(0,Math.min(10,state.brandHealth+o.impact.brand));
+state.ethicsScore=Math.max(0state.ethicsScoree.ethicsScore+o.impact.ethics));
+next();
+}
+
+function next(){
+state.step++;
+updateMetrics();
+render();
+}
+
+function showEnd(){
+const outcome=state.revenue>=5&&state.brandHealth>=7&&state.ethicsScore>=7?'positive':'negative';
+const title=outcome==='positive'?'🏆 Success: Ethical Growth Leader':'❌ Suboptimal Results';
+const text=outcome==='positive'?'<p>You achieved exceptional success by balancing growth with ethics.</p><p><strong>Series B:</strong> $25M at $150M valuation.</p>':'<p>Short-term growth came at the cost of ethics and brand trust.</p><p><strong>Series B:</strong> $18M at $110M valuation with strict governance requirements.</p>';
+
+document.getElementById('content').innerHTML=`<div class="outcome-card ${outcome}"><div class="outcome-title">${title}</div><div class="outcome-metrics"><div class="outcome-metric"><div class="outcome-metric-label">Final Revenue</div><div class="outcome-metric-value">$${state.revenue.toFixed(1)}M</div></div><div class="outcome-metric"><div class="outcome-metric-label">Brand Health</div><div class="outcome-metric-value">${state.brandHealth}/10</div></div><div class="outcome-metric"><div class="outcome-metric-label">Ethics Score</div><div class="outcome-metric-value">${state.ethicsScore}/10</div></div></div><div class="outcome-text">${text}</div><button class="restart-btn" onclick="location.reload()">↻ Restart</button></div>`;
+}
+
+updateMetrics();
+render();
+</script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 ---
 title: Strategic Marketing in the AI Age: From Brand Management to Autonomous Growth Engines
 description: An intelligent textbook transforming marketing professionals into architects of AI-powered growth systems.
-image: /img/hero-static.jpg
-og:image: /img/hero-static.jpg
-twitter:image: /img/hero-static.jpg
+image: /img/hero.png
+og:image: /img/hero.png
+twitter:image: /img/hero.png
 social:
    cards: false
 hide:
@@ -13,6 +13,8 @@ hide:
 .md-content__inner h1 {display: none !important;}
 </style>
 # Strategic Marketing in the AI Age: From Brand Management to Autonomous Growth Engines
+
+![Hero image](./img/hero.png)
 
 ## Course Overview
 
