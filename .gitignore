@@ -3,3 +3,8 @@ site
 ~$*
 .vscode/
 .cache
+
+# Large binary files - store outside git
+*.pdf
+*.pptx
+*.zip
