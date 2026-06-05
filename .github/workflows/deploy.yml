@@ -26,5 +26,11 @@ jobs:
       - name: Install MkDocs and plugins
         run: pip install mkdocs "mkdocs-material[imaging]"
 
+      - name: Install local plugins
+        run: pip install -e .
+        continue-on-error: true
+
       - name: Build and deploy
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: mkdocs gh-deploy --force
