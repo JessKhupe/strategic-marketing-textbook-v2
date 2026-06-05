@@ -1,0 +1,1609 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A strategic marketing textbook for the AI age that blends marketing principles with machine intelligence.">
+      
+      
+        <meta name="author" content="Jessica Khupe">
+      
+      
+        <link rel="canonical" href="https://jessicakhupe.github.io/strategic-marketing-in-the-ai-age/chapter-02-ai-machine-learning-foundations-for-marketers/">
+      
+      
+        <link rel="prev" href="../chapter-01-marketing-fundamentals-meet-machine-intelligence/">
+      
+      
+        <link rel="next" href="../chapter-03-data-infrastructure-foundation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Chapter 2: AI & Machine Learning Foundations for Marketers - Strategic Marketing in the AI Age</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+      <link rel="stylesheet" href="../css/axiom-mascot.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-D7X1XT7Z19"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-D7X1XT7Z19",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-D7X1XT7Z19",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Chapter 2: AI & Machine Learning Foundations for Marketers - Strategic Marketing in the AI Age" />
+<meta property="og:description" content="A strategic marketing textbook for the AI age that blends marketing principles with machine intelligence." />
+<meta property="og:image" content="https://jessicakhupe.github.io/strategic-marketing-in-the-ai-age/assets/images/social/chapter-02-ai-machine-learning-foundations-for-marketers.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://jessicakhupe.github.io/strategic-marketing-in-the-ai-age/chapter-02-ai-machine-learning-foundations-for-marketers/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Chapter 2: AI & Machine Learning Foundations for Marketers - Strategic Marketing in the AI Age" />
+<meta property="twitter:description" content="A strategic marketing textbook for the AI age that blends marketing principles with machine intelligence." />
+<meta property="twitter:image" content="https://jessicakhupe.github.io/strategic-marketing-in-the-ai-age/assets/images/social/chapter-02-ai-machine-learning-foundations-for-marketers.png" />
+</head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-2-ai-machine-learning-foundations-for-marketers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Strategic Marketing in the AI Age" class="md-header__button md-logo" aria-label="Strategic Marketing in the AI Age" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Strategic Marketing in the AI Age
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 2: AI & Machine Learning Foundations for Marketers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jessicakhupe/strategic-marketing-in-the-ai-age" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Strategic Marketing in the AI Age" class="md-nav__button md-logo" aria-label="Strategic Marketing in the AI Age" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    Strategic Marketing in the AI Age
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jessicakhupe/strategic-marketing-in-the-ai-age" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../microsims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MicroSims
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../code/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Modules
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-01-marketing-fundamentals-meet-machine-intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1: Marketing Fundamentals Meet Machine Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2: AI & Machine Learning Foundations for Marketers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2: AI & Machine Learning Foundations for Marketers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Objectives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fundamental-learning-paradigms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fundamental Learning Paradigms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ml-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The ML Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Metrics &amp; Evaluation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frameworks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools &amp; Platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-applications-in-marketing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Applications in Marketing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Applications in Marketing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-case-1-churn-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Case 1: Churn Prediction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-case-2-customer-lifetime-value-clv-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Case 2: Customer Lifetime Value (CLV) Regression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-case-3-next-best-offer-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Case 3: Next-Best-Offer Clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethical-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ethical Checkpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsim-the-prediction-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MicroSim: The Prediction Lab
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Studies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsim-the-model-selection-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MicroSim: The Model Selection Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-studies_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Studies
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-03-data-infrastructure-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3: Data Infrastructure: The Foundation of AI Marketing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-04-personalization-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4: Personalization Engines: From Segments to Individuals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-05-content-generation-brand-voice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5: Content Generation & Brand Voice at Scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-06-customer-analytics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6: Customer Analytics: From Hindsight to Foresight
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-07-attribution-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7: Attribution & Performance Measurement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-08-marketing-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8: Marketing Automation: From Workflows to Intelligent Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-09-ethical-ai-marketing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9: Ethical AI Marketing & Responsible Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-10-accessibility-inclusive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10: Accessibility & Inclusive Marketing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-11-channel-strategy.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11: Channel Strategy & Omnichannel Orchestration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-12-conversion-optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 12: Conversion Optimization & Growth Experimentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-13-customer-retention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 13: Customer Retention & Loyalty Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-14-autonomous-growth-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 14: Autonomous Growth Systems & Product-Led Growth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-15-strategic-ai-marketing-leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 15: Strategic AI Marketing Leadership & Transformation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Objectives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fundamental-learning-paradigms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fundamental Learning Paradigms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ml-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The ML Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Metrics &amp; Evaluation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frameworks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools &amp; Platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-applications-in-marketing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Applications in Marketing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Applications in Marketing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-case-1-churn-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Case 1: Churn Prediction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-case-2-customer-lifetime-value-clv-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Case 2: Customer Lifetime Value (CLV) Regression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-case-3-next-best-offer-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Case 3: Next-Best-Offer Clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethical-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ethical Checkpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsim-the-prediction-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MicroSim: The Prediction Lab
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Studies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsim-the-model-selection-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MicroSim: The Model Selection Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-studies_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Studies
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/jessicakhupe/strategic-marketing-in-the-ai-age/blob/master/docs/chapter-02-ai-machine-learning-foundations-for-marketers.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<hr />
+<p>title: Chapter 2: AI &amp; Machine Learning Foundations for Marketers
+description: Core ML concepts, supervised vs. unsupervised learning, and practical applications in marketing.</p>
+<hr />
+<h1 id="chapter-2-ai-machine-learning-foundations-for-marketers">Chapter 2: AI &amp; Machine Learning Foundations for Marketers</h1>
+<div class="admonition note">
+<p class="admonition-title">Bloom's Level &amp; Duration</p>
+<p><strong>Bloom's Level:</strong> Understand, Apply<br />
+<strong>Duration:</strong> 2 weeks</p>
+</div>
+<h2 id="summary">Summary</h2>
+<p>Students move beyond AI basics to understand and apply supervised learning, unsupervised learning, and reinforcement learning in marketing contexts. Topics include model training, validation, feature engineering, and practical deployment considerations. This chapter bridges marketing intuition with statistical rigor.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ol>
+<li>Distinguish supervised, unsupervised, and reinforcement learning paradigms and their marketing use cases.  </li>
+<li>Build, validate, and deploy a simple prediction model end-to-end.</li>
+<li>Interpret model outputs, quantify uncertainty, and communicate results to non-technical stakeholders.  </li>
+<li>Identify and mitigate bias, overfitting, and data drift in production models.</li>
+</ol>
+<h2 id="core-theory">Core Theory</h2>
+<h3 id="fundamental-learning-paradigms">Fundamental Learning Paradigms</h3>
+<p><strong>Supervised Learning:</strong> Model learns from labeled examples (e.g., historical customer churn data) to predict new instances. Common in marketing: conversion prediction, customer lifetime value estimation, churn modeling.</p>
+<p><strong>Unsupervised Learning:</strong> Discover patterns in unlabeled data (e.g., customer segmentation, topic modeling). Useful when ground truth is unknown or expensive to obtain.</p>
+<p><strong>Reinforcement Learning:</strong> Agent learns through reward signals via interaction (e.g., dynamic pricing, real-time bid optimization). Less common but growing in marketing automation.</p>
+<h3 id="the-ml-workflow">The ML Workflow</h3>
+<ol>
+<li><strong>Problem Definition:</strong> Frame as regression, classification, or clustering.  </li>
+<li><strong>Data Collection &amp; Cleaning:</strong> Handle missing values, outliers, class imbalance.  </li>
+<li><strong>Exploratory Data Analysis (EDA):</strong> Understand distributions, correlations, and anomalies.  </li>
+<li><strong>Feature Engineering:</strong> Create and select high-signal features.  </li>
+<li><strong>Model Selection:</strong> Choose algorithm(s) aligned with problem and constraints.  </li>
+<li><strong>Training &amp; Validation:</strong> Split data (train/val/test), use cross-validation, avoid data leakage.  </li>
+<li><strong>Evaluation:</strong> Compute metrics, conduct error analysis.  </li>
+<li><strong>Deployment:</strong> Serve predictions with monitoring for data and model drift.  </li>
+<li><strong>Monitoring &amp; Iteration:</strong> Track performance over time; retrain as needed.</li>
+</ol>
+<h3 id="key-metrics-evaluation">Key Metrics &amp; Evaluation</h3>
+<ul>
+<li><strong>Classification:</strong> Accuracy, Precision, Recall, F1-score, AUC/ROC, Lift.  </li>
+<li><strong>Regression:</strong> MAE, RMSE, R², MAPE.  </li>
+<li><strong>Business metrics:</strong> CAC payback period, incrementality, revenue impact.</li>
+</ul>
+<h2 id="frameworks">Frameworks</h2>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Purpose</th>
+<th>Marketing Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Train/Validation/Test Split</strong></td>
+<td>Prevent overfitting and enable unbiased evaluation</td>
+<td>60% train, 20% validation, 20% test</td>
+</tr>
+<tr>
+<td><strong>K-Fold Cross-Validation</strong></td>
+<td>Assess model stability across data subsets</td>
+<td>5-fold CV for small datasets</td>
+</tr>
+<tr>
+<td><strong>Confusion Matrix &amp; Precision/Recall Trade-off</strong></td>
+<td>Balance false positives vs. false negatives</td>
+<td>High recall for at-risk churn segments; high precision for premium offers</td>
+</tr>
+<tr>
+<td><strong>Feature Importance &amp; SHAP</strong></td>
+<td>Interpret model decisions and debug issues</td>
+<td>Understand which customer attributes drive conversion</td>
+</tr>
+<tr>
+<td><strong>Bias-Variance Trade-off</strong></td>
+<td>Optimize generalization performance</td>
+<td>Regularization (L1/L2) to reduce variance at cost of slight bias</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tools-platforms">Tools &amp; Platforms</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Use case</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Scikit-learn</strong></td>
+<td>Lightweight supervised &amp; unsupervised ML</td>
+<td>Best for smaller datasets, interpretability</td>
+</tr>
+<tr>
+<td><strong>TensorFlow / PyTorch</strong></td>
+<td>Deep learning and large-scale models</td>
+<td>Audio, image, text; higher barrier to entry</td>
+</tr>
+<tr>
+<td><strong>Colab / Jupyter</strong></td>
+<td>Experimentation and prototyping</td>
+<td>Free GPU for model training</td>
+</tr>
+<tr>
+<td><strong>Weights &amp; Biases</strong></td>
+<td>Experiment tracking and hyperparameter tuning</td>
+<td>Logs metrics, assets, and hyperparameters for reproducibility</td>
+</tr>
+<tr>
+<td><strong>MLflow</strong></td>
+<td>Model versioning and production deployment</td>
+<td>Register models, stage transitions, batch/real-time serving</td>
+</tr>
+<tr>
+<td><strong>Optuna / Ray Tune</strong></td>
+<td>Automated hyperparameter optimization</td>
+<td>Bayesian search, early stopping</td>
+</tr>
+</tbody>
+</table>
+<h2 id="practical-applications-in-marketing">Practical Applications in Marketing</h2>
+<h3 id="use-case-1-churn-prediction">Use Case 1: Churn Prediction</h3>
+<ul>
+<li><strong>Objective:</strong> Identify at-risk customers before they leave.  </li>
+<li><strong>Data:</strong> Historical customer interactions, subscription tenure, engagement metrics.  </li>
+<li><strong>Model:</strong> Binary classification (logistic regression, random forest, gradient boosting).  </li>
+<li><strong>Outcome:</strong> Prioritize retention campaigns on high-risk cohorts.</li>
+</ul>
+<h3 id="use-case-2-customer-lifetime-value-clv-regression">Use Case 2: Customer Lifetime Value (CLV) Regression</h3>
+<ul>
+<li><strong>Objective:</strong> Predict total revenue a customer will generate.  </li>
+<li><strong>Data:</strong> Purchase history, RFM (Recency, Frequency, Monetary) features, demographics.  </li>
+<li><strong>Model:</strong> Regression (linear, tree-based ensemble).  </li>
+<li><strong>Outcome:</strong> Segment by CLV; allocate marketing budget proportionally.</li>
+</ul>
+<h3 id="use-case-3-next-best-offer-clustering">Use Case 3: Next-Best-Offer Clustering</h3>
+<ul>
+<li><strong>Objective:</strong> Group customers with similar preferences to deliver targeted offers.  </li>
+<li><strong>Data:</strong> Product affinity, browsing history, past purchase categories.  </li>
+<li><strong>Model:</strong> Unsupervised (K-means, hierarchical clustering, or embeddings).  </li>
+<li><strong>Outcome:</strong> Personalized offer recommendations using cluster centroid patterns.</li>
+</ul>
+<h2 id="ethical-checkpoints">Ethical Checkpoints</h2>
+<div class="admonition warning">
+<p class="admonition-title">Ethical Considerations in ML</p>
+<ul>
+<li><strong>Data Bias:</strong> Training data often reflects historical inequities. Audit for demographic parity (equal positive rates across groups). Use techniques like fairness constraints or reweighting.  </li>
+<li><strong>Model Transparency:</strong> Complex models (deep neural networks) obscure decision logic. Use SHAP/LIME to explain individual predictions; default to simpler models when performance is similar.  </li>
+<li><strong>Feedback Loops:</strong> Deployment of a model can alter the underlying distribution (e.g., churn model triggers interventions that reduce future churn). Monitor and document feedback effects.  </li>
+<li><strong>Consent &amp; Privacy:</strong> Ensure customer data used for training respects consent and regulatory frameworks (GDPR, CCPA).</li>
+</ul>
+</div>
+<h2 id="microsim-the-prediction-lab">MicroSim: The Prediction Lab</h2>
+<p>An interactive simulator where students:
+1. Upload a synthetic customer dataset (or use a provided default).<br />
+2. Select features for a churn prediction model.<br />
+3. Choose train/validation/test splits.<br />
+4. Train a logistic regression or decision tree model in real-time.<br />
+5. View evaluation metrics (accuracy, precision, recall, ROC curve).<br />
+6. Adjust features and hyperparameters; observe impact on performance.<br />
+7. Export a model card with key findings.</p>
+<h2 id="case-studies">Case Studies</h2>
+<p><strong>Netflix Engagement Prediction:</strong>
+- Used supervised learning to predict which users would re-engage after subscription pause.<br />
+- Combined viewing history, genre preferences, and temporal patterns.<br />
+- Enabled proactive "win-back" campaigns with improved ROI.</p>
+<p><strong>Spotify Recommendation Engine:</strong>
+- Unsupervised clustering on listening history created persona segments.<br />
+- Deployed a collaborative filtering model to surface next-best songs.<br />
+- A/B tested personalization increases; reported 20% boost in playlist saves.</p>
+<p><strong>Amazon Dynamic Pricing:</strong>
+- Regression model on demand, competitor price, inventory, and seasonality.<br />
+- Reinforcement learning component optimizes price in real-time.<br />
+- Result: higher margin realization without eroding demand significantly.</p>
+<hr />
+<p><strong>Key Takeaway:</strong> ML is a powerful tool for marketing personalization and prediction, but requires careful data handling, rigorous evaluation, and ethical guardrails. Start simple; add complexity only when justified by performance gains and business value.</p>
+<p>Proceed to <a href="#chapter-3">Chapter 3: Data Infrastructure &amp; Governance</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Ethical Checkpoints</p>
+<ul>
+<li><strong>Algorithmic bias in training data:</strong> Audit datasets for skewed representation.  </li>
+<li><strong>Black box decisions affecting customers:</strong> Favor explainability for high stakes outputs.  </li>
+<li><strong>Data privacy in model training:</strong> Ensure data law compliance and minimization.  </li>
+<li><strong>Accountability:</strong> Define owners for model decisions and remediation processes.</li>
+</ul>
+</div>
+<h2 id="microsim-the-model-selection-challenge">MicroSim: The Model Selection Challenge</h2>
+<p>Students are given five marketing problems (churn prediction, content generation, image recognition for UGC, price optimization, sentiment analysis). For each problem they must:</p>
+<ul>
+<li>Select the appropriate AI approach (supervised/unsupervised/reinforcement or generative/transfer learning).  </li>
+<li>Justify their selection with consideration of data availability, latency, explainability, and ethical risk.</li>
+</ul>
+<h2 id="case-studies_1">Case Studies</h2>
+<ul>
+<li><strong>Google:</strong> evolution of search ranking and ML systems.  </li>
+<li><strong>Meta:</strong> ad targeting algorithms and their societal implications.  </li>
+<li><strong>Salesforce Einstein:</strong> CRM AI integration and operationalization.</li>
+</ul>
+<hr />
+<p>Proceed to Chapter 3 for data infrastructure foundations.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../chapter-01-marketing-fundamentals-meet-machine-intelligence/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter 1: Marketing Fundamentals Meet Machine Intelligence">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Chapter 1: Marketing Fundamentals Meet Machine Intelligence
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../chapter-03-data-infrastructure-foundation/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 3: Data Infrastructure: The Foundation of AI Marketing">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Chapter 3: Data Infrastructure: The Foundation of AI Marketing
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Jessica Khupe. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

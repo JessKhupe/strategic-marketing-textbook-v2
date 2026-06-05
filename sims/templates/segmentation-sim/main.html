@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Segmentation Evolution Lab</title>
+    <style>
+      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; margin:18px}
+      .controls{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+      .panel{border:1px solid #e3e3e3;padding:12px;border-radius:8px;margin-bottom:12px}
+      table{width:100%;border-collapse:collapse}
+      th,td{padding:6px;border-bottom:1px solid #eee;text-align:left}
+      button{background:#0366d6;color:#fff;border:none;padding:8px 12px;border-radius:6px}
+    </style>
+  </head>
+  <body>
+    <h2>Segmentation Evolution Lab — Interactive Demo</h2>
+    <div class="controls">
+      <label><input type="radio" name="seg" value="demographic" checked> Demographic</label>
+      <label><input type="radio" name="seg" value="behavioral"> Behavioral</label>
+      <label><input type="radio" name="seg" value="ai"> AI‑enhanced</label>
+      <select id="segmentKey">
+        <option value="age_group">Age Group</option>
+        <option value="region">Region</option>
+      </select>
+      <button id="runBtn">Run Experiment</button>
+      <button id="exportBtn">Export Segment CSV</button>
+    </div>
+
+    <div class="panel">
+      <strong>Summary metrics</strong>
+      <div id="metrics">No experiment run yet.</div>
+    </div>
+
+    <div class="panel">
+      <strong>Segment breakdown</strong>
+      <div id="tableWrap">No data</div>
+    </div>
+
+    <div class="panel">
+      <strong>Quick report (copy/paste)</strong>
+      <pre id="report" style="white-space:pre-wrap"></pre>
+    </div>
+
+    <script src="segmentation-sim.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 70px;
+    width: 70px;
+}
+
+/* Container to control the iframe size and scaling */
+.iframe-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Iframe styles */
+  iframe {
+    width: 100%;
+    border: solid 2px blue;
+  }
+
+  /* if a div with <div class="upper-alpha"> wraps a list, then number A.B.C.D etc */
+  /* this requires that the markdown extension md_in_html is enabled in the mkdocs.yml file */
+  .upper-alpha ol {
+    list-style-type: upper-alpha;
+  }
+
+/* Styling for the Copy Button */
+.admonition.prompt {
+  position: relative;
+}
+
+.admonition.prompt .copy-button {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background-color: #0056d6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.3rem;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.admonition.prompt .copy-button:hover {
+  background-color: #0041a4; /* Darker blue on hover */
+}
+
+/* Companion Agent admonitions — Nell mascot in upper-right corner */
+.admonition.companion-agent {
+  position: relative;
+  border-left-color: #1565C0 !important;
+}
+
+.admonition.companion-agent > .admonition-title {
+  position: relative;
+  padding-top: 14px;
+  background-color: rgba(21, 101, 192, 0.1) !important;
+}
+
+.admonition.companion-agent > .admonition-title::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: -4px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/nell-colored.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+/* Scale down on mobile */
+@media (max-width: 600px) {
+  .admonition.companion-agent > .admonition-title::after {
+    width: 32px;
+    height: 32px;
+    top: 1px;
+    right: 4px;
+  }
+}
+
+/* Grid layout for cards - 3 column */
+.grid.cards.grid-3-col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Responsive: 2 columns on medium screens */
+@media screen and (max-width: 1200px) {
+  .grid.cards.grid-3-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Responsive: 1 column on small screens */
+@media screen and (max-width: 768px) {
+  .grid.cards.grid-3-col {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
