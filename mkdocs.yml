@@ -2,9 +2,9 @@ site_name: Strategic Marketing in the AI Age
 site_description: 'A strategic marketing textbook for the AI age that blends marketing principles with machine intelligence.'
 site_author: 'Jessica Khupe'
 repo_name: 'GitHub Repo'
-site_url: 'https://jessicakhupe.github.io/strategic-marketing-in-the-ai-age/'
-repo_url: 'https://github.com/jessicakhupe/strategic-marketing-in-the-ai-age'
-edit_uri: 'blob/master/docs'
+site_url: 'https://jesskhupe.github.io/strategic-marketing-textbook-v2/'
+repo_url: 'https://github.com/JessKhupe/strategic-marketing-textbook-v2'
+edit_uri: 'blob/main/docs'
 
 nav:
   - "Home": index.md
